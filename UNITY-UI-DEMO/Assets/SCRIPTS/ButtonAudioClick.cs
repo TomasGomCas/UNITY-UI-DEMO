@@ -16,7 +16,8 @@ public class ButtonAudioClick : MonoBehaviour
     }
 
     void playSound() {
-        this.audioSource.Play();
+        GameObject a = GameObject.Find("GameController");
+        a.GetComponent<MusicController>().audioClick();
     }
 
 }

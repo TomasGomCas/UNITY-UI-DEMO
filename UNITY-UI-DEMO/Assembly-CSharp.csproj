@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{BF888A70-572D-CA02-6189-9552E87BF096}</ProjectGuid>
+    <ProjectGuid>{9630E72E-B3D8-69B4-48A0-C81D507BBA0A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,19 +63,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Application.cs" />
-    <Compile Include="Assets\Boton.cs" />
-    <Compile Include="Assets\CambiarVolumen.cs" />
-    <Compile Include="Assets\CasillaVerificacion.cs" />
-    <Compile Include="Assets\ListaDesplegable.cs" />
-    <Compile Include="Assets\MensajePopUp.cs" />
-    <Compile Include="Assets\Musica.cs" />
-    <Compile Include="Assets\PruebaText.cs" />
+    <Compile Include="Assets\SCENES\Datos.cs" />
+    <Compile Include="Assets\SCENES\hj.cs" />
+    <Compile Include="Assets\SCENES\prue.cs" />
+    <Compile Include="Assets\SCRIPTS\AUDIO\Audio_ButtonClick.cs" />
     <Compile Include="Assets\SCRIPTS\ButtonAudioClick.cs" />
-    <Compile Include="Assets\Scenes\CLASS\Card.cs" />
-    <Compile Include="Assets\Scenes\Datos.cs" />
-    <Compile Include="Assets\Scenes\hj.cs" />
-    <Compile Include="Assets\Scenes\prue.cs" />
+    <Compile Include="Assets\SCRIPTS\CambiarVolumen.cs" />
+    <Compile Include="Assets\SCRIPTS\CasillaVerificacion.cs" />
+    <Compile Include="Assets\SCRIPTS\GENERAL\Button_ChangeScene.cs" />
+    <Compile Include="Assets\SCRIPTS\ListaDesplegable.cs" />
+    <Compile Include="Assets\SCRIPTS\MODEL\Application.cs" />
+    <Compile Include="Assets\SCRIPTS\MODEL\Card.cs" />
+    <Compile Include="Assets\SCRIPTS\MODEL\GameController.cs" />
+    <Compile Include="Assets\SCRIPTS\MODEL\MusicController.cs" />
+    <Compile Include="Assets\SCRIPTS\MensajePopUp.cs" />
+    <Compile Include="Assets\SCRIPTS\Musica.cs" />
+    <Compile Include="Assets\SCRIPTS\PruebaText.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -605,85 +608,85 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.4f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Path.Editor">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="PsdPlugin">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Psdimporter.Editor">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Tomas/Desktop/Workspace/UNITY/Prueba/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

@@ -15,9 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MAIN MENU 2.unity
     guid: b8cdf1db9b8415041860195435963920
   - enabled: 1
-    path: Assets/Scenes/UI2.unity
+    path: Assets/SCENES/scene_rankedmatch.unity
     guid: d3445a7f508c9e74eb8bf4c5eb534793
   - enabled: 1
-    path: Assets/Scenes/UI3.unity
+    path: Assets/SCENES/scene_options.unity
     guid: 36694d70f2820eb41b700383e3c97e18
   m_configObjects: {}
