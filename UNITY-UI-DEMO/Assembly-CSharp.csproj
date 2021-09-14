@@ -79,6 +79,8 @@
     <Compile Include="Assets\SCRIPTS\MensajePopUp.cs" />
     <Compile Include="Assets\SCRIPTS\Musica.cs" />
     <Compile Include="Assets\SCRIPTS\PruebaText.cs" />
+    <Compile Include="Assets\SCRIPTS\SCENE\scene_mainmenu.cs" />
+    <Compile Include="Assets\SCRIPTS\SCENE\scene_options.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

@@ -5,7 +5,10 @@ using UnityEngine;
 public class MusicController : MonoBehaviour
 {
     public AudioSource music_main;
-    public AudioClip clip;
+    //public AudioClip clip;
+
+    public AudioSource button_click;
+    //public AudioClip clip_buttonClick;
 
     void Start()
     {
@@ -13,6 +16,9 @@ public class MusicController : MonoBehaviour
         music_main = this.gameObject.AddComponent<AudioSource>();
         music_main.clip = Resources.Load("audio/BANDASONORA") as AudioClip; 
         music_main.Play();
+
+        button_click = this.gameObject.AddComponent<AudioSource>();
+        button_click.clip = Resources.Load("audio/SONIDO_CLICK") as AudioClip;
     }
 
     void Update()
@@ -25,8 +31,9 @@ public class MusicController : MonoBehaviour
     }
 
     public void audioClick() {
+        this.button_click.Play();
         // effect_buttonClick.Play();
         //Debug.Log("MI PENE");
-        this.music_main.volume = 0;
+        //this.music_main.volume = 0;
     }
 }
