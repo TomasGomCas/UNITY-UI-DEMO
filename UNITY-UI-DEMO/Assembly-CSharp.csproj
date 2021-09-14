@@ -264,6 +264,9 @@
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.4f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.4f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
     </Reference>
@@ -689,6 +692,30 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.CacheServer">
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables.Editor">
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.Addressables.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Localization">
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline">
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Localization.Editor">
+      <HintPath>C:/Users/Tomas/Desktop/Repository/UNITY-UI-DEMO/UNITY-UI-DEMO/Library/ScriptAssemblies/Unity.Localization.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
