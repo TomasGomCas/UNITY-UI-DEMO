@@ -5,7 +5,8 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     public MusicController musicController;
-
+    public LocalizationController localizationController;
+    public RestController restController;
     void Start()
     {
 
@@ -14,16 +15,14 @@ public class GameController : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        // if more then one music player is in the scene
-        //destroy ourselves
         else
         {
             DontDestroyOnLoad(gameObject);
         }
 
-        // DontDestroyOnLoad(this.gameObject);
         musicController = this.gameObject.AddComponent<MusicController>();
-        //musicController.enabled = true;
+        localizationController = this.gameObject.AddComponent<LocalizationController>();
+        restController = this.gameObject.AddComponent<RestController>();
     }
 
     void Update()

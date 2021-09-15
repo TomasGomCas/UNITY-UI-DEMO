@@ -74,6 +74,10 @@
     <Compile Include="Assets\SCRIPTS\MODEL\Application.cs" />
     <Compile Include="Assets\SCRIPTS\AUDIO\Audio_ButtonClick.cs" />
     <Compile Include="Assets\SCRIPTS\MODEL\MusicController.cs" />
+    <Compile Include="Assets\SCRIPTS\SCENE\scene_intro.cs" />
+    <Compile Include="Assets\SCRIPTS\SCENE\scene_intro_load.cs" />
+    <Compile Include="Assets\SCRIPTS\MODEL\LocalizationController.cs" />
+    <Compile Include="Assets\SCRIPTS\MODEL\RestController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
