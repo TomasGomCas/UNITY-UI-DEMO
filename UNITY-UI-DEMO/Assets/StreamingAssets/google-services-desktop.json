@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "273164695455",
+    "firebase_url": "https://unity-ui-demo-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "unity-ui-demo",
+    "storage_bucket": "unity-ui-demo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273164695455:android:46e7c1ad2b261e0b32afaa",
+        "android_client_info": {
+          "package_name": "com.company.ui.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273164695455-im88uo35masdbtoudfosllv9lalpf0fc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxNg3E8CdtKIsgtyAuf2K1G1lwLDOKkoQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273164695455-im88uo35masdbtoudfosllv9lalpf0fc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 535956449}
   - component: {fileID: 535956448}
   m_Layer: 0
-  m_Name: InputField (1)
+  m_Name: input_password
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -600,7 +600,7 @@ GameObject:
   - component: {fileID: 1265849297}
   - component: {fileID: 1265849296}
   m_Layer: 0
-  m_Name: InputField
+  m_Name: input_email
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -742,8 +742,9 @@ GameObject:
   - component: {fileID: 1305003977}
   - component: {fileID: 1305003976}
   - component: {fileID: 1305003975}
+  - component: {fileID: 1305003978}
   m_Layer: 0
-  m_Name: Button
+  m_Name: button_signin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -812,7 +813,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1305003976}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1305003978}
+        m_TargetAssemblyTypeName: scene_signin, Assembly-CSharp
+        m_MethodName: signup
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1305003976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -851,6 +864,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1305003973}
   m_CullTransparentMesh: 1
+--- !u!114 &1305003978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305003973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31da1042436115647bc8bc634f95b202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameController: {fileID: 0}
+  controller: {fileID: 0}
+  button_signin: {fileID: 0}
 --- !u!1 &1369081624
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,6 +890,7 @@ GameObject:
   - component: {fileID: 1369081627}
   - component: {fileID: 1369081626}
   - component: {fileID: 1369081625}
+  - component: {fileID: 1369081628}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -917,6 +946,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1369081628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369081624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31da1042436115647bc8bc634f95b202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameController: {fileID: 0}
+  controller: {fileID: 0}
+  button_signin: {fileID: 0}
 --- !u!1 &1463996113
 GameObject:
   m_ObjectHideFlags: 0

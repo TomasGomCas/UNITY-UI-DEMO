@@ -65,6 +65,7 @@
     <Compile Include="Assets\SCRIPTS\PruebaText.cs" />
     <Compile Include="Assets\SCENES\Datos.cs" />
     <Compile Include="Assets\SCRIPTS\MODEL\Card.cs" />
+    <Compile Include="Assets\SCRIPTS\MODEL\User.cs" />
     <Compile Include="Assets\SCRIPTS\GENERAL\Button_ChangeScene.cs" />
     <Compile Include="Assets\SCRIPTS\SCENE\scene_intro_load.cs" />
     <Compile Include="Assets\SCENES\hj.cs" />
@@ -78,9 +79,23 @@
     <Compile Include="Assets\SCRIPTS\MODEL\Application.cs" />
     <Compile Include="Assets\SCRIPTS\AUDIO\Audio_ButtonClick.cs" />
     <Compile Include="Assets\SCRIPTS\MODEL\MusicController.cs" />
-    <Compile Include="Assets\SCRIPTS\MODEL\User.cs" />
+    <Compile Include="Assets\SCRIPTS\SCENE\scene_signin.cs" />
+    <Compile Include="Assets\SCRIPTS\CONTROLLER\FirebaseAuthController.cs" />
   </ItemGroup>
   <ItemGroup>
+     <None Include="Assets\FIREBASE\Plugins\Firebase.App.dll" />
+     <None Include="Assets\FIREBASE\Plugins\x86_64\FirebaseCppAuth.dll" />
+     <None Include="Assets\FIREBASE\Plugins\Firebase.TaskExtension.dll" />
+     <None Include="Assets\FIREBASE\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
+     <None Include="Assets\FIREBASE\Plugins\Firebase.Auth.dll" />
+     <None Include="Assets\FIREBASE\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml" />
+     <None Include="Assets\FIREBASE\Plugins\iOS\Firebase.Auth.dll" />
+     <None Include="Assets\FIREBASE\Plugins\x86_64\FirebaseCppApp-8_4_0.dll" />
+     <None Include="Assets\Parse\Plugins\dotNet45\Unity.Compat.dll" />
+     <None Include="Assets\FIREBASE\Plugins\Firebase.Platform.dll" />
+     <None Include="Assets\Parse\Plugins\dotNet45\Unity.Tasks.dll" />
+     <None Include="Assets\FIREBASE\Plugins\Google.MiniJson.dll" />
+     <None Include="Assets\FIREBASE\Plugins\iOS\Firebase.App.dll" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -305,6 +320,27 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.App">
+      <HintPath>Assets\FIREBASE\Plugins\Firebase.App.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Tasks">
+      <HintPath>Assets\Parse\Plugins\dotNet45\Unity.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.TaskExtension">
+      <HintPath>Assets\FIREBASE\Plugins\Firebase.TaskExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Platform">
+      <HintPath>Assets\FIREBASE\Plugins\Firebase.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Compat">
+      <HintPath>Assets\Parse\Plugins\dotNet45\Unity.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.MiniJson">
+      <HintPath>Assets\FIREBASE\Plugins\Google.MiniJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Auth">
+      <HintPath>Assets\FIREBASE\Plugins\Firebase.Auth.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

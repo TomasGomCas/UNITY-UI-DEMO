@@ -7,6 +7,8 @@ public class GameController : MonoBehaviour
     public MusicController musicController;
     public LocalizationController localizationController;
     public RestController restController;
+    public FirebaseAuthController firebaseAuthController;
+
     void Start()
     {
 
@@ -23,6 +25,7 @@ public class GameController : MonoBehaviour
         musicController = this.gameObject.AddComponent<MusicController>();
         localizationController = this.gameObject.AddComponent<LocalizationController>();
         restController = this.gameObject.AddComponent<RestController>();
+        firebaseAuthController = this.gameObject.AddComponent<FirebaseAuthController>();
     }
 
     void Update()
