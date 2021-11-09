@@ -33,10 +33,11 @@ public class scene_signin : MonoBehaviour
     }
     async void signin()
     {
-        string a = "puta mierda";
-         await this.controller.firebaseAuthController.signinWithEmailPassword(this.input_email.text, this.input_password.text);
+        //string a = "puta mierda";
+        string b = await this.controller.firebaseAuthController.signinWithEmailPassword(this.input_email.text, this.input_password.text);
+        Debug.Log("LOGIN ANTES: " + b);
         //await this.controller.firebaseAuthController.signinWithEmailPassword(this.input_email.text, this.input_password.text)
-        Debug.Log("LOGIN: " + a);
+        //Debug.Log("LOGIN: " + a);
     }
 
 }

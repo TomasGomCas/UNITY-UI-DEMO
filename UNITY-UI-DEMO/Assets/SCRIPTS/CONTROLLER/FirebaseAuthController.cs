@@ -33,21 +33,22 @@ public class FirebaseAuthController : MonoBehaviour
     public async Task<string> signinWithEmailPassword(string email,string password) {
 
         //await StartCoroutine(Example());
+        string returnValue = "BIEN";
 
-        await auth.SignInWithEmailAndPasswordAsync(email, password).ContinueWith( tarea => {
+        await auth.SignInWithEmailAndPasswordAsync(email, password).ContinueWith(tarea =>  {
             if (tarea.IsCanceled)
             {
                 Debug.LogError("SignInWithEmailAndPasswordAsync was canceled.");
-                return "BIEN";
+                returnValue = "MAL1";
             }
             if (tarea.IsFaulted)
             {
                 Debug.LogError("SignInWithEmailAndPasswordAsync encountered an error: " + tarea.Exception);
-                return "BIEN";
-            }
-            return "HIJO PUTA";
+                returnValue = "MAL2";
+                //return "BIEN";
+            } 
         });
-        return "ME CAGO EN TU MADRE";
+        return returnValue;
     }
 
     IEnumerator Example()
