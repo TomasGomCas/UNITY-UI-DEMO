@@ -12,6 +12,9 @@ public class scene_mainmenu : MonoBehaviour
 
     void Start()
     {
+       
+                    Debug.Log("MENU: " + Cache.email);
+
         gameController = GameObject.Find("GameController");
         this.controller = this.gameController.GetComponent("GameController") as GameController;
 

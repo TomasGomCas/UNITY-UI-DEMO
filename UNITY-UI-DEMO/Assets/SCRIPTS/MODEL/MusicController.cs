@@ -15,7 +15,7 @@ public class MusicController : MonoBehaviour
         //music_main.volume = 0.5f;
         music_main = this.gameObject.AddComponent<AudioSource>();
         music_main.clip = Resources.Load("audio/BANDASONORA") as AudioClip; 
-        music_main.Play();
+        //music_main.Play();
 
         button_click = this.gameObject.AddComponent<AudioSource>();
         button_click.clip = Resources.Load("audio/SONIDO_CLICK") as AudioClip;

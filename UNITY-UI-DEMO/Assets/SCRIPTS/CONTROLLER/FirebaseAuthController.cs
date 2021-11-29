@@ -4,7 +4,7 @@ using System.Collections;
 
 public class FirebaseAuthController : MonoBehaviour
 {
-    Firebase.Auth.FirebaseAuth auth;
+    public Firebase.Auth.FirebaseAuth auth;
 
     void Start()
     {
@@ -30,24 +30,27 @@ public class FirebaseAuthController : MonoBehaviour
     }
 
 
-    public async Task<string> signinWithEmailPassword(string email,string password) {
+    public async Task<bool> signinWithEmailPassword(string email,string password) {
 
         //await StartCoroutine(Example());
-        string returnValue = "BIEN";
+        bool returnValue = true;
 
         await auth.SignInWithEmailAndPasswordAsync(email, password).ContinueWith(tarea =>  {
             if (tarea.IsCanceled)
             {
                 Debug.LogError("SignInWithEmailAndPasswordAsync was canceled.");
-                returnValue = "MAL1";
+                returnValue = false;
             }
             if (tarea.IsFaulted)
             {
                 Debug.LogError("SignInWithEmailAndPasswordAsync encountered an error: " + tarea.Exception);
-                returnValue = "MAL2";
+                returnValue = false;
                 //return "BIEN";
             } 
         });
+        Debug.Log("SETEA EMAIL CACHE: " + email);
+        Cache.email = email;
+
         return returnValue;
     }
 
@@ -72,6 +75,9 @@ public class FirebaseAuthController : MonoBehaviour
             }
             return true;
         });
+
+        Debug.Log("SETEA EMAIL CACHE: " + email);
+        Cache.email = email;
 
         return true;
     }

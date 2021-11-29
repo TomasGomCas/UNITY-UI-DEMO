@@ -71,16 +71,18 @@
     <Compile Include="Assets\SCENES\hj.cs" />
     <Compile Include="Assets\SCRIPTS\MODEL\RestController.cs" />
     <Compile Include="Assets\SCRIPTS\SCENE\scene_intro.cs" />
+    <Compile Include="Assets\SCRIPTS\SCENE\scene_signin.cs" />
     <Compile Include="Assets\SCRIPTS\CasillaVerificacion.cs" />
     <Compile Include="Assets\SCRIPTS\SCENE\scene_mainmenu.cs" />
     <Compile Include="Assets\SCENES\prue.cs" />
     <Compile Include="Assets\SCRIPTS\ListaDesplegable.cs" />
     <Compile Include="Assets\SCRIPTS\Musica.cs" />
     <Compile Include="Assets\SCRIPTS\MODEL\Application.cs" />
+    <Compile Include="Assets\SCRIPTS\CONTROLLER\FirebaseAuthController.cs" />
     <Compile Include="Assets\SCRIPTS\AUDIO\Audio_ButtonClick.cs" />
     <Compile Include="Assets\SCRIPTS\MODEL\MusicController.cs" />
-    <Compile Include="Assets\SCRIPTS\SCENE\scene_signin.cs" />
-    <Compile Include="Assets\SCRIPTS\CONTROLLER\FirebaseAuthController.cs" />
+    <Compile Include="Assets\SCRIPTS\MODEL\Cache.cs" />
+    <Compile Include="Assets\SCRIPTS\MODEL\PruebaSingleton.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\FIREBASE\Plugins\Firebase.App.dll" />
@@ -318,26 +320,26 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.App">
-      <HintPath>Assets\FIREBASE\Plugins\Firebase.App.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Tasks">
-      <HintPath>Assets\Parse\Plugins\dotNet45\Unity.Tasks.dll</HintPath>
-    </Reference>
     <Reference Include="Firebase.TaskExtension">
       <HintPath>Assets\FIREBASE\Plugins\Firebase.TaskExtension.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.Platform">
       <HintPath>Assets\FIREBASE\Plugins\Firebase.Platform.dll</HintPath>
     </Reference>
+    <Reference Include="Google.MiniJson">
+      <HintPath>Assets\FIREBASE\Plugins\Google.MiniJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Tasks">
+      <HintPath>Assets\Parse\Plugins\dotNet45\Unity.Tasks.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Compat">
       <HintPath>Assets\Parse\Plugins\dotNet45\Unity.Compat.dll</HintPath>
     </Reference>
-    <Reference Include="Google.MiniJson">
-      <HintPath>Assets\FIREBASE\Plugins\Google.MiniJson.dll</HintPath>
+    <Reference Include="Firebase.App">
+      <HintPath>Assets\FIREBASE\Plugins\Firebase.App.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.Auth">
       <HintPath>Assets\FIREBASE\Plugins\Firebase.Auth.dll</HintPath>

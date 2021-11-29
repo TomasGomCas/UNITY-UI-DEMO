@@ -13,7 +13,7 @@ public class RestController : MonoBehaviour
 
     void Start()
     {
-        getUser("email","token");
+        //getUser("email","token");
     }
 
     public void getUser(String email,String token)
@@ -86,6 +86,31 @@ public class RestController : MonoBehaviour
             posts.Add(post);
         }
         return new Muro(posts);*/
+    }
+
+    public void getUserInfo()
+    {
+        Debug.Log("CACHE EN GETUSERINFOR: " + Cache.email);
+        string email = Cache.email;
+        Debug.Log("OJOLOCO: " + email.ToString());
+        string url = "https://firestore.googleapis.com/v1/projects/unity-ui-demo/databases/(default)/documents/user/" + email + "?key=vqTmPpVxIZRQE2YI8324";
+        User user = new User();
+
+        HttpWebRequest request;
+        request = WebRequest.Create(url) as HttpWebRequest;
+        request.Method = "GET";
+        request.ContentType = "application/json; charset=utf-8";
+
+        HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+        StreamReader reader = new StreamReader(response.GetResponseStream());
+        string body = reader.ReadToEnd();
+
+        JObject json = JObject.Parse(body);
+        Debug.Log("JSON: " + json);
+        Debug.Log("LANGUAGE: " + (String) json["fields"]["language"]["stringValue"]);
+        Debug.Log("NICK: " + (String)json["fields"]["nick"]["stringValue"]);
+        Debug.Log("POINTS: " + (String)json["fields"]["points"]["stringValue"]);
+
     }
 
 }

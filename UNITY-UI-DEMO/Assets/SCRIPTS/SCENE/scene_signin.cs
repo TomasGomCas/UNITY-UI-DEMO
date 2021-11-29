@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class scene_signin : MonoBehaviour
 {
     public GameObject gameController;
@@ -34,8 +34,15 @@ public class scene_signin : MonoBehaviour
     async void signin()
     {
         //string a = "puta mierda";
-        string b = await this.controller.firebaseAuthController.signinWithEmailPassword(this.input_email.text, this.input_password.text);
-        Debug.Log("LOGIN ANTES: " + b);
+        bool b = await this.controller.firebaseAuthController.signinWithEmailPassword(this.input_email.text, this.input_password.text);
+
+        if (b == true) {
+            SceneManager.LoadScene("scene_intro_load");
+        }
+        else {
+            Debug.Log("ERROR EN EL LOGIN");
+        }
+
         //await this.controller.firebaseAuthController.signinWithEmailPassword(this.input_email.text, this.input_password.text)
         //Debug.Log("LOGIN: " + a);
     }
