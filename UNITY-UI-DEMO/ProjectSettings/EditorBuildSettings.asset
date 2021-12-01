@@ -5,15 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/SCENES/scene_rankedmatch.unity
     guid: d3445a7f508c9e74eb8bf4c5eb534793
@@ -29,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SCENES/scene_mainmenu.unity
     guid: 34b31a3a2e005e7468741c1518dd9575
+  - enabled: 1
+    path: Assets/SCENES/scene_signin.unity
+    guid: 07c2a717f419ea24697294987b4bd0fb
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: cdbc3009fb056794b9df1e75cf71ca5e,
       type: 2}
