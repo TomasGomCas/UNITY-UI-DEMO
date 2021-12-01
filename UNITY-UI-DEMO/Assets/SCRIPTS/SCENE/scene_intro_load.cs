@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.Localization.Settings;
 public class scene_intro_load : MonoBehaviour
 {
-
     public GameObject gameController;
     public GameController controller;
 
@@ -28,21 +27,13 @@ public class scene_intro_load : MonoBehaviour
         SceneManager.LoadScene("scene_mainmenu");
     }
 
-    private void load()
+    async private void load()
     {
-        Debug.Log("LOOOOOOOAAAAAAAAAD");
-
-        Debug.Log("MENU : " + Cache.email);
-
-        Cache.email = "";
-          Cache.language = "";
-          Cache.nick = "";
-          Cache.points = "";
-
-          //string email = this.controller.firebaseAuthController.auth.CurrentUser.Email;
-          //xCache.email = email;
-        Debug.Log("LOOOOOOOAAAAAAAAAD 2");
-        this.controller.restController.getUserInfo();
-
+        await this.controller.restController.getUserInfo();
+        Debug.Log("LANGUAGE DE BBDD: " + Cache.language);
+        this.controller.localizationController.setLocation(Cache.language);
+        Debug.Log("LANGUAGE DE BBDD: " + this.controller.localizationController.name);
+        SceneManager.LoadScene("scene_mainmenu");
     }
 }
+

@@ -9,4 +9,9 @@ public static class Cache
     public static string language;
     public static string nick;
     public static string points;
+
+    static Cache() {
+        email = "statico";
+    }
+
 }

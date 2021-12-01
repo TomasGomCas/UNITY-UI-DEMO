@@ -12,8 +12,8 @@ public class MensajePopUp : MonoBehaviour
 
     private void Start()
     {
-        popUp.SetActive(false);
-        botonID.onClick.AddListener(displayPopUp);
+        //popUp.SetActive(false);
+        //botonID.onClick.AddListener(displayPopUp);
     }
 
     private void displayPopUp() {

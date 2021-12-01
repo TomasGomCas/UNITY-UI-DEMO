@@ -8,7 +8,8 @@ public class LocalizationController : MonoBehaviour
 
     void Start()
     {
-        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[0];
+
+        //LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[0];
     }
 
 
@@ -20,4 +21,34 @@ public class LocalizationController : MonoBehaviour
     public void setLocalization(int locale) {
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[locale];
     }
+
+    public int getLocationCode(string locale)
+    {
+        if (locale == "en") {
+            return 0;
+        }
+        else if (locale == "es") {
+            return 1;
+        }
+        else {
+            return 1;
+        }
+    }
+
+        public void setLocation(string locale)
+        {
+
+            if (locale == "en")
+            {
+            LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[0];
+        }
+            else if (locale == "es")
+            {
+            LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[1];
+        }
+            else
+            {
+            LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[0];
+        }
+        }
 }

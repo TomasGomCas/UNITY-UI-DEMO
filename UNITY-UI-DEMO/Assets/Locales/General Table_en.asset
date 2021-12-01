@@ -22,5 +22,13 @@ MonoBehaviour:
     m_Localized: Settings
     m_Metadata:
       m_Items: []
+  - m_Id: 27998260485771264
+    m_Localized: Signin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27998434436141056
+    m_Localized: Password
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

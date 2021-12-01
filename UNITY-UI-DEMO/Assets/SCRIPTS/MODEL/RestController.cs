@@ -7,6 +7,7 @@ using System;
 using System.IO;
 using System.Net;
 using System.Text;
+using System.Threading.Tasks;
 
 public class RestController : MonoBehaviour
 {
@@ -88,7 +89,7 @@ public class RestController : MonoBehaviour
         return new Muro(posts);*/
     }
 
-    public void getUserInfo()
+    public async Task<bool> getUserInfo()
     {
         Debug.Log("CACHE EN GETUSERINFOR: " + Cache.email);
         string email = Cache.email;
@@ -106,10 +107,16 @@ public class RestController : MonoBehaviour
         string body = reader.ReadToEnd();
 
         JObject json = JObject.Parse(body);
+        Cache.email = email;
+        Cache.language = (String)json["fields"]["language"]["stringValue"];
+        Cache.nick = (String)json["fields"]["nick"]["stringValue"];
+        Cache.points = (String)json["fields"]["points"]["stringValue"];
         Debug.Log("JSON: " + json);
-        Debug.Log("LANGUAGE: " + (String) json["fields"]["language"]["stringValue"]);
-        Debug.Log("NICK: " + (String)json["fields"]["nick"]["stringValue"]);
-        Debug.Log("POINTS: " + (String)json["fields"]["points"]["stringValue"]);
+        Debug.Log("LANGUAGE USUARIO: " + (String) json["fields"]["language"]["stringValue"]);
+        Debug.Log("NICK USUARIO: " + (String)json["fields"]["nick"]["stringValue"]);
+        Debug.Log("POINTS USUARIO: " + (String)json["fields"]["points"]["stringValue"]);
+
+        return true;
 
     }
 

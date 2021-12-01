@@ -879,6 +879,8 @@ MonoBehaviour:
   gameController: {fileID: 0}
   controller: {fileID: 0}
   button_signin: {fileID: 0}
+  input_email: {fileID: 0}
+  input_password: {fileID: 0}
 --- !u!1 &1369081624
 GameObject:
   m_ObjectHideFlags: 0
@@ -961,6 +963,8 @@ MonoBehaviour:
   gameController: {fileID: 0}
   controller: {fileID: 0}
   button_signin: {fileID: 0}
+  input_email: {fileID: 0}
+  input_password: {fileID: 0}
 --- !u!1 &1463996113
 GameObject:
   m_ObjectHideFlags: 0
@@ -1292,6 +1296,7 @@ GameObject:
   - component: {fileID: 1704429972}
   - component: {fileID: 1704429974}
   - component: {fileID: 1704429973}
+  - component: {fileID: 1704429975}
   m_Layer: 0
   m_Name: Text (2)
   m_TagString: Untagged
@@ -1362,6 +1367,45 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1704429971}
   m_CullTransparentMesh: 1
+--- !u!114 &1704429975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704429971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:d1e49aabea6225c4db6c7af50c3f53f6
+    m_TableEntryReference:
+      m_KeyId: 27998434436141056
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1704429973}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 1
 --- !u!1 &1880174840
 GameObject:
   m_ObjectHideFlags: 0
