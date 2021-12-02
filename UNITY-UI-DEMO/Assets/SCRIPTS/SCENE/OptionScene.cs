@@ -69,6 +69,8 @@ public class OptionScene : MonoBehaviour
     void volume()
     {
         this.controller.musicController.music_main.volume = this.slider_volume.value;
+        PlayerPrefs.SetFloat("volume", this.slider_volume.value);
+        PlayerPrefs.Save();
     }
 
 }

@@ -15,7 +15,8 @@ public class MusicController : MonoBehaviour
         //music_main.volume = 0.5f;
         music_main = this.gameObject.AddComponent<AudioSource>();
         music_main.clip = Resources.Load("audio/BANDASONORA") as AudioClip; 
-        //music_main.Play();
+        music_main.volume = PlayerPrefs.GetFloat("volume");
+        music_main.Play();
 
         button_click = this.gameObject.AddComponent<AudioSource>();
         button_click.clip = Resources.Load("audio/SONIDO_CLICK") as AudioClip;
@@ -27,7 +28,7 @@ public class MusicController : MonoBehaviour
     }
 
     public void setVolume_music(float volume){
-       // this.music_main.volume = volume;
+        //this.music_main.volume = volume;
     }
 
     public void audioClick() {

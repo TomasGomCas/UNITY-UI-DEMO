@@ -20,9 +20,7 @@ public class LoadScene : MonoBehaviour
         yield return new WaitForSecondsRealtime(5);
 
         Cache.email = "prueba";
-        Debug.Log("ANTES: " + Cache.email);
         Cache.email = "pruebaDespues";
-        Debug.Log("DESPUES: " + Cache.email);
 
         SceneManager.LoadScene("scene_mainmenu");
     }
@@ -30,9 +28,8 @@ public class LoadScene : MonoBehaviour
     async private void load()
     {
         await this.controller.restController.getUserInfo();
-        Debug.Log("LANGUAGE DE BBDD: " + Cache.language);
         this.controller.localizationController.setLocation(Cache.language);
-        Debug.Log("LANGUAGE DE BBDD: " + this.controller.localizationController.name);
+        this.controller.musicController.music_main.volume = PlayerPrefs.GetFloat("volume");
         SceneManager.LoadScene("scene_mainmenu");
     }
 }
