@@ -65,10 +65,11 @@
     <Compile Include="Assets\SCRIPTS\SCENE\IntroScene.cs" />
     <Compile Include="Assets\SCRIPTS\SCENE\SigninScene.cs" />
     <Compile Include="Assets\SCRIPTS\SCENE\MainmenuScene.cs" />
+    <Compile Include="Assets\SCRIPTS\SCENE\TestScene.cs" />
     <Compile Include="Assets\SCRIPTS\SERVICES\FirebaseAuthService.cs" />
     <Compile Include="Assets\SCRIPTS\SERVICES\MusicService.cs" />
     <Compile Include="Assets\SCRIPTS\MODEL\Dataholder.cs" />
-    <Compile Include="Assets\SCRIPTS\SCENE\TestScene.cs" />
+    <Compile Include="Assets\SCRIPTS\SERVICES\LoaderService.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\FIREBASE\Plugins\Firebase.App.dll" />

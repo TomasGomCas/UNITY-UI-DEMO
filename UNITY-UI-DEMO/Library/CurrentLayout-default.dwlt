@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 27554
+  controlID: 12117
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 27555
+  controlID: 12118
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 27556
+  controlID: 12119
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -398,9 +398,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 14b3ffff
-      m_LastClickedID: -19692
-      m_ExpandedIDs: eaabfffffaacffff14b3ffff58b3ffff5ab3ffff0cb4ffffdccdffffeecdffff36ddffffa8ddffffb0e0ffffd2e0ffff94ecffffa8ecffffd0ecffffe4ecffff04edffff3afbffff127d0000fa81000012820000228200009c820000208300002a8300003a8300004c83000074860000e8860000f48600007c900000e29000001291000086910000
+      m_SelectedIDs: e4470000
+      m_LastClickedID: 18404
+      m_ExpandedIDs: 98f1ffffaaf1ffff20f3ffff22f7ffff7ef8ffff2afbffff32fbffff3afbffffa2470000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -580,22 +580,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/PREFABS
+    - Assets/SCRIPTS/SERVICES
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/PREFABS
+  - Assets/SCRIPTS/SERVICES
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Tomas\Desktop\Repository\UNITY-UI-DEMO\UNITY-UI-DEMO
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d6850000
-    m_LastClickedID: 34262
-    m_ExpandedIDs: 00000000f8470000
+    scrollPos: {x: 0, y: 27}
+    m_SelectedIDs: bc4e0000
+    m_LastClickedID: 20156
+    m_ExpandedIDs: 0000000094480000b0480000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -611,7 +611,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 10}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -623,7 +623,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000
+    m_ExpandedIDs: 0000000094480000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -734,11 +734,11 @@ MonoBehaviour:
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
-    m_CachedPref: 160
+    m_CachedPref: -160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 86
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0

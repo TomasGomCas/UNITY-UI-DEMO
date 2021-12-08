@@ -31,7 +31,7 @@ public class SigninScene : MonoBehaviour
 
 
         this.panel_popup = GameObject.Find("CanvasPopup");
-        this.panel_popup.SetActive(false);
+        //this.panel_popup.SetActive(false);
     }
 
     // Update is called once per frame
