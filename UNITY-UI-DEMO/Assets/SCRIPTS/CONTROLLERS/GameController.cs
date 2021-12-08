@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
     public LocalizationController localizationController;
     public RestController restController;
     public FirebaseAuthController firebaseAuthController;
+    public LoaderService loadService;
 
     void Start()
     {
@@ -26,6 +27,8 @@ public class GameController : MonoBehaviour
         localizationController = this.gameObject.AddComponent<LocalizationController>();
         restController = this.gameObject.AddComponent<RestController>();
         firebaseAuthController = this.gameObject.AddComponent<FirebaseAuthController>();
+        this.loadService = this.gameObject.AddComponent<LoaderService>();
+
     }
 
     void Update()

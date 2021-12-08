@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class TestScene : MonoBehaviour
 {
-   // private bool showPopUp = true;
+    public GameObject gameController;
+    public GameController controller;
+    // private bool showPopUp = true;
     // Start is called before the first frame update
     void Start()
     {
-
-       // OnGUI();
+        gameController = GameObject.Find("GameController");
+        this.controller = this.gameController.GetComponent("GameController") as GameController;
+        // OnGUI();
     }
 
    /* void OnGUI()

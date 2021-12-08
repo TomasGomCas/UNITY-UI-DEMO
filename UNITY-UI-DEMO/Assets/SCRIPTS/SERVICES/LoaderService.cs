@@ -24,6 +24,13 @@ public class LoaderService : MonoBehaviour
         }
         Debug.Log("LOG ROTATION: " + rotation);
     }
+
+    public void rotate() {
+        imagen = GameObject.Find("image_load").GetComponent<Image>();
+        rotation = 10;
+        InvokeRepeating("OutputTime", 0.0f, 0.1f);  //1s delay, repeat every 1s
+    }
+
     // Update is called once per frame
     void Update()
     {
