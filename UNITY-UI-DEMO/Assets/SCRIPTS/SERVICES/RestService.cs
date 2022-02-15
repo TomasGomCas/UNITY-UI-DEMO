@@ -9,6 +9,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using Proyecto26;
+using UnityEngine.Networking;
 
 public class RestController : MonoBehaviour
 {
@@ -24,18 +25,52 @@ public class RestController : MonoBehaviour
         //getUser("email","token");
     }
 
+    /*public static void dineor()
+    {
+        Debug.Log("ME CAGO EN LA PUTA");
+
+        Dictionary<string, string> content = new Dictionary<string, string>();
+        //Fill key and value
+        content.Add("grant_type", "client_credentials");
+        content.Add("client_id", "login-secret");
+        content.Add("client_secret", "secretpassword");
+
+        UnityWebRequest www = UnityWebRequest.Post("https://accounts.google.com/o/oauth2/v2/auth?client_id=273164695455-il78ngdte4fm5jvu5untud0j7k9e63bp.apps.googleusercontent.com&redirect_uri=urn:ietf:wg:oauth:2.0:oob&response_type=code&scope=email", content);
+        //Send request
+        yield return www.Send();
+
+        if (!www.isError)
+        {
+            string resultContent = www.downloadHandler.text;
+            //TokenClassName json = JsonUtility.FromJson<TokenClassName>(resultContent);
+
+            //Return result
+            //result(json.access_token);
+        }
+        else
+        {
+            //Return null
+            //result("");
+        }
+    }*/
+
     public static void ExchangeAuthCodeWithIdToken()
     {
-        Debug.Log("EENTRA EN REST SERVICE");
+        Debug.Log("-kik EN REST SERVICE");
+        //jj();
 
-        RestClient.Get("https://accounts.google.com/o/oauth2/v2/auth?client_id=273164695455-il78ngdte4fm5jvu5untud0j7k9e63bp.apps.googleusercontent.com&redirect_uri=urn:ietf:wg:oauth:2.0:oob&response_type=code&scope=email");
+       //String url = "https://accounts.google.com/o/oauth2/v2/auth?client_id=273164695455-il78ngdte4fm5jvu5untud0j7k9e63bp.apps.googleusercontent.com&redirect_uri=urn:ietf:wg:oauth:2.0:oob&response_type=code&scope=email";
+       // UnityWebRequest www = UnityWebRequest.Get(url);
+       // www.Send();
+
+        //RestClient.Get("https://accounts.google.com/o/oauth2/v2/auth?client_id=273164695455-il78ngdte4fm5jvu5untud0j7k9e63bp.apps.googleusercontent.com&redirect_uri=urn:ietf:wg:oauth:2.0:oob&response_type=code&scope=email");
         //Application.OpenURL($"https://accounts.google.com/o/oauth2/v2/auth?client_id=273164695455-il78ngdte4fm5jvu5untud0j7k9e63bp.apps.googleusercontent.com&redirect_uri=urn:ietf:wg:oauth:2.0:oob&response_type=code&scope=email");
         //Application.ur
 
         /*RestClient.Post($"https://oauth2.googleapis.com/token?code={code}&client_id={ClientId}&client_secret={ClientSecret}&redirect_uri=urn:ietf:wg:oauth:2.0:oob&grant_type=authorization_code", null).Then(
         response => {
-            var data = StringSerializationAPI.Deserialize(typeof(GoogleIdTokenResponse), response.Text) as GoogleIdTokenResponse;
-            callback(data.id_token);
+            //var data = StringSerializationAPI.Deserialize(typeof(GoogleIdTokenResponse), response.Text) as GoogleIdTokenResponse;
+            //callback(data.id_token);
         }).Catch(Debug.Log);*/
 
         /*
@@ -46,7 +81,7 @@ public class RestController : MonoBehaviour
         request.ContentType = "application/json; charset=utf-8";
         request.AllowAutoRedirect = true;
 
-        HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+        HttpWebResponse response = request.GetResponse() as HttpWebResponse;*/
         //StreamReader reader = new StreamReader(response.GetResponseStream());
         //string body = reader.ReadToEnd();
 

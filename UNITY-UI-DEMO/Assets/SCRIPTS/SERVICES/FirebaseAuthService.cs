@@ -18,9 +18,9 @@ public class FirebaseAuthController : MonoBehaviour
         // ExchangeAuthCodeWithIdToken();
 
         Debug.Log("ENTRA EN FIREBASE AUTH");
-        /*
+        
         Firebase.Auth.Credential credential =
-    Firebase.Auth.GoogleAuthProvider.GetCredential(ClientId, ClientSecret);
+        Firebase.Auth.GoogleAuthProvider.GetCredential(ClientId, ClientSecret);
         auth.SignInWithCredentialAsync(credential).ContinueWith(task => {
             if (task.IsCanceled)
             {
@@ -36,7 +36,7 @@ public class FirebaseAuthController : MonoBehaviour
             Firebase.Auth.FirebaseUser newUser = task.Result;
             Debug.LogFormat("User signed in successfully: {0} ({1})",
                 newUser.DisplayName, newUser.UserId);
-        });*/
+        });
     }
 
 
